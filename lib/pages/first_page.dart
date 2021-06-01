@@ -48,18 +48,12 @@ class _FirstPageState extends State<FirstPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children:[
-                    // #image
-                    Container(
-                      height: 40,
-                      width:40,
-                      decoration: BoxDecoration(
-                        shape:BoxShape.circle,
-                        image:DecorationImage(
-                          image:AssetImage('assets/images/ic_profil.jpg'),
-                          fit: BoxFit.cover,
-                        ),
-                      ),
+                    SizedBox(height: 20,),
+                    CircleAvatar(
+                      backgroundImage: NetworkImage('http://almode.ru/uploads/posts/2020-11/1604549303_41-p-devid-bekkhem-58.jpg'),
                     ),
+                    // #image
+
                     SizedBox(height: 16,),
                     //#welcome
                     RichText(
